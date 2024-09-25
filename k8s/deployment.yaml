@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: platform-ui-v1
+  namespace: ui
+  labels:
+    app: platform-ui-v1
+spec:
+  selector:
+    matchLabels:
+      app: platform-ui-v1
+  template:
+    metadata:
+      labels:
+        app: platform-ui-v1
+    spec:
+      containers:
+      - name: platform-ui-v1
+        image: 10.63.20.34:80/platform-ui-v1:latest
+        ports:
+        - containerPort: 3000
+      imagePullSecrets:
+      - name: regcred

@@ -1,0 +1,23 @@
+name: Run Nginx Docker Container
+ 
+on:
+  push:
+    branches:
+      - master
+ 
+jobs:
+  run-nginx:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: listing all files
+        run: ls
+      - name: Creating jar file
+        run: mvn clean install
+      - name: Building an image
+        run: sudo docker build -t 10.63.20.34:80/platform-ui-v1 . 
+      - name: Pushing the image to registry
+        run: sudo docker push 10.63.20.34:80/platform-ui-v1
+      - name: Deploying on kubernetes
+        run: kubectl apply -f k8s/
