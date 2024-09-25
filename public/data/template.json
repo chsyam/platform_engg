@@ -1,0 +1,666 @@
+{
+	"Cluster Provisioning": [
+		{
+			"id": "1",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Name",
+			"parentId": 0
+		},
+		{
+			"id": "2",
+			"data": {
+				"values": [
+					"10GB",
+					"20GB",
+					"30GB",
+					"40GB",
+					"50GB"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "Storage Size",
+			"parentId": 0
+		},
+		{
+			"id": "3",
+			"data": {
+				"values": "AWS Instance Types",
+				"htmlType": "DropDown",
+				"valueType": "dynamic"
+			},
+			"name": "Instance Type",
+			"parentId": 0
+		},
+		{
+			"id": "4",
+			"data": {
+				"values": "Number of Nodes in a Cluster",
+				"htmlType": "DropDown",
+				"valueType": "dynamic"
+			},
+			"name": "Instance Count",
+			"parentId": 0
+		},
+		{
+			"id": "5",
+			"data": {
+				"values": [
+					"1.5",
+					"3.0"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "Kube Version",
+			"parentId": 0
+		}
+	],
+	"Vulnerability Scanning": [
+		{
+			"id": "1",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Name",
+			"parentId": 0
+		},
+		{
+			"id": "2",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Image",
+			"parentId": 0
+		},
+		{
+			"id": "3",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Tag",
+			"parentId": 0
+		}
+	],
+	"VDE Provisioning": [
+		{
+			"id": "1",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Env Name",
+			"parentId": 0
+		},
+		{
+			"id": "2",
+			"data": {
+				"values": "AWS Instance Types",
+				"htmlType": "DropDown",
+				"valueType": "dynamic"
+			},
+			"name": "Instance Type",
+			"parentId": 0
+		},
+		{
+			"id": "3",
+			"data": {
+				"values": [
+					"10GB",
+					"20GB",
+					"30GB",
+					"40GB",
+					"50GB"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "Storage Size",
+			"parentId": 0
+		},
+		{
+			"id": "4",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Username",
+			"parentId": 0
+		}
+	],
+	"Database Provisioning": [
+		{
+			"id": "1",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Server Name",
+			"parentId": 0
+		},
+		{
+			"id": "2",
+			"data": {
+				"values": [
+					"postgres",
+					"mongodb"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "Server Type",
+			"parentId": 0
+		},
+		{
+			"id": "3",
+			"data": {
+				"values": [
+					"exclusive",
+					"shared"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "Server Mode",
+			"parentId": 0
+		},
+		{
+			"id": "4",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Admin Password",
+			"parentId": 0
+		},
+		{
+			"id": "5",
+			"data": {
+				"values": [
+					"1Gi",
+					"2Gi",
+					"5Gi"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "Storage Size",
+			"parentId": 0
+		}
+	],
+	"Project Env": [
+		{
+			"id": "2",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Repourl",
+			"parentId": 0
+		},
+		{
+			"id": "3",
+			"data": {
+				"values": [
+					"java",
+					"python"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "programmingLanguage",
+			"parentId": 0
+		},
+		{
+			"id": "4",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "imageName",
+			"parentId": 0
+		},
+		{
+			"id": "5",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "tag",
+			"parentId": 0
+		},
+		{
+			"id": "6",
+			"data": {
+				"values": [
+					"Maven",
+					"Gradle",
+					"null"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "buildTool",
+			"parentId": 0
+		},
+		{
+			"id": "7",
+			"data": {
+				"values": [
+					"Selenium",
+					"Junit",
+					"Pytest",
+					"RobotFramework",
+					"null"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "testingTool",
+			"parentId": 0
+		},
+		{
+			"id": "8",
+			"data": {
+				"values": [
+					"SonarQube",
+					"null"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "code_quality_analysis",
+			"parentId": 0
+		},
+		{
+			"id": "9",
+			"data": {
+				"values": [
+					"Nexus",
+					"JFrog",
+					"null"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "artifact",
+			"parentId": 0
+		},
+		{
+			"id": "10",
+			"data": {
+				"values": [
+					"Grype",
+					"Trivy",
+					"null"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "vulnerabilityScan",
+			"parentId": 0
+		},
+		{
+			"id": "11",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "job",
+			"parentId": 0
+		},
+		{
+			"id": "12",
+			"data": {
+				"values": [
+					"DEV",
+					"QA",
+					"PROD"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "Environment",
+			"parentId": 0
+		},
+		{
+			"id": "13",
+			"data": {
+				"values": [
+					"alice"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "users",
+			"parentId": 0
+		}
+	],
+	"Sandbox Provisioning": [
+		{
+			"id": "1",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "UserName",
+			"parentId": 0
+		},
+		{
+			"id": "2",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Instance Name",
+			"parentId": 0
+		},
+		{
+			"id": "3",
+			"data": {
+				"values": "Number of Nodes in a Cluster",
+				"htmlType": "DropDown",
+				"valueType": "dynamic"
+			},
+			"name": "Number of VMs",
+			"parentId": 0
+		},
+		{
+			"id": "4",
+			"data": {
+				"values": [
+					"AWS",
+					"GCP",
+					"AZURE",
+					"ON-PREM"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "Deployment Type",
+			"parentId": 0
+		},
+		{
+			"id": "5",
+			"data": {
+				"values": "AWS Instance Types",
+				"htmlType": "DropDown",
+				"valueType": "dynamic"
+			},
+			"name": "Instance Type",
+			"parentId": 0
+		},
+		{
+			"id": "6",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Budget",
+			"parentId": 0
+		},
+		{
+			"id": "7",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Memory",
+			"parentId": 0
+		},
+		{
+			"id": "8",
+			"data": {
+				"values": [],
+				"htmlType": "TextArea",
+				"valueType": "static"
+			},
+			"name": "Requirements",
+			"parentId": 0
+		}
+	],
+	"Microservice Deployment": [
+		{
+			"id": "1",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Branch Name",
+			"parentId": 0
+		},
+		{
+			"id": "2",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "source Code_Url",
+			"parentId": 0
+		},
+		{
+			"id": "3",
+			"data": {
+				"values": [
+					"Java",
+					"Python",
+					"Node JS"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "Source Code_Language",
+			"parentId": 0
+		},
+		{
+			"id": "4",
+			"data": {
+				"values": [
+					"Maven",
+					"Gradle"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "Build_Tool",
+			"parentId": 0
+		},
+		{
+			"id": "5",
+			"data": {
+				"values": [
+					"SonarQube"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "Code_Quality_Analysis",
+			"parentId": 0
+		},
+		{
+			"id": "6",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "dockerTag",
+			"parentId": 0
+		},
+		{
+			"id": "7",
+			"data": {
+				"values": [
+					"QA",
+					"DEV",
+					"PROD"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static"
+			},
+			"name": "environment",
+			"parentId": 0
+		}
+	],
+	"Bigdata Cluster Provisioning": [
+		{
+			"id": "1",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Cluster Name",
+			"parentId": 0
+		},
+		{
+			"id": "2",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Tools",
+			"parentId": 0
+		}
+	],
+	"Register Common Services": [
+		{
+			"id": "1",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Application Name",
+			"parentId": 0
+		},
+		{
+			"id": "2",
+			"data": {
+				"values": [
+					"Caching",
+					"Logging",
+					"Tracing",
+					"Encryption-Decryption"
+				],
+				"htmlType": "DropDown",
+				"valueType": "static",
+				"selectType": "multi"
+			},
+			"name": "services",
+			"parentId": 0
+		},
+		{
+			"id": "3",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Project Name",
+			"parentId": 0
+		},
+		{
+			"id": "4",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "Start Date",
+			"parentId": 0
+		},
+		{
+			"id": "5",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "End Date",
+			"parentId": 0
+		}
+	],
+	"Auto-Remediation": [
+		{
+			"id": "1",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "alertname",
+			"parentId": 0
+		},
+		{
+			"id": "2",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "category",
+			"parentId": 0
+		},
+		{
+			"id": "3",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "log Signature",
+			"parentId": 0
+		},
+		{
+			"id": "4",
+			"data": {
+				"values": [],
+				"htmlType": "Input",
+				"valueType": "static"
+			},
+			"name": "remediation",
+			"parentId": 0
+		}
+	],
+	"GenAI Services": [
+		{
+			"id": "1",
+			"data": {
+				"values": [
+					"rayserve",
+					"skypilot"
+				],
+				"htmlType": "MultiSelect-CheckBox",
+				"valueType": "static"
+			},
+			"name": "alertname",
+			"parentId": 0
+		}
+	]
+}

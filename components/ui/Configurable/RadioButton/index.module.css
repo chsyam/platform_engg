@@ -1,0 +1,29 @@
+.radioButtonWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    height: 100%;
+    width: 100%;
+    padding-left: 8px;
+}
+
+.radioButtonWrapper span{
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+
+    border: 1px solid #9E9E9E;
+}
+
+.radioButtonWrapper label{
+    color: rgb(48, 47, 47);
+    font-family: "Poppins";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+  

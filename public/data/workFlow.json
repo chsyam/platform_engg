@@ -1,0 +1,33 @@
+{
+    "Pending": [
+        "Approve",
+        "Cancel",
+        "Clone"
+    ],
+    "Approved": [
+        "Provision",
+        "Cancel",
+        "Clone"
+    ],
+    "Initiated": [
+        "Abort",
+        "Clone"
+    ],
+    "Failed": [
+        "View",
+        "Edit",
+        "Redeploy"
+    ],
+    "Rejected": [
+        "Clone"
+    ],
+    "Provisioned": [
+        "View",
+        "Clone",
+        "Delete",
+        "Update"
+    ],
+    "Terminated": [
+        "Clone"
+    ]
+}

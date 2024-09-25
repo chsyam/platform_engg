@@ -1,0 +1,451 @@
+.id {
+    padding-left: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.id:hover {
+    text-decoration: underline;
+}
+
+.horizontalLines {
+    height: 35px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.createNew {
+    background-color: #0C2132;
+    width: max-content;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 34px;
+    margin: 0;
+    padding: 1px 6px;
+    border-radius: 5px;
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.heading {
+    padding: 5px 0;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 600;
+    color: #333333;
+    width: max-content;
+    font-family: poppins;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+    height: 35px;
+}
+
+.menu_options {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+}
+
+.input {
+    outline: none;
+    padding: 5px;
+    font-family: poppins;
+    border-radius: 5px;
+    color: #000137;
+}
+
+.searchIcon {
+    padding: 10px 0 0 5px;
+    cursor: default;
+}
+
+.search {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+    border: 1px solid #BFE0E0;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.services {
+    width: 90%;
+    border-radius: 0 0 10px 10px;
+    color: #000137;
+}
+
+.services table {
+    background-color: #FFF;
+    width: 100%;
+    text-align: left;
+    font-family: poppins;
+    margin-top: 24px;
+}
+
+.services table thead tr {
+    background-color: #0C2132;
+    color: #FFF;
+    height: 54px;
+}
+
+.services table thead tr th {
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+}
+
+.services table tbody tr td:nth-child(3) {
+    text-align: center;
+}
+
+.services table thead tr th:nth-child(2),
+.services table thead tr th:nth-child(4),
+.services table thead tr th:nth-child(5),
+.services table thead tr th:nth-child(6) {
+    text-align: center;
+}
+
+.services table tbody tr {
+    height: 54px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.services table tbody tr td:nth-child(1) {
+    text-align: center;
+    cursor: pointer;
+}
+
+.services table tbody tr td:nth-child(2) {
+    cursor: pointer;
+}
+
+.services table tbody tr td:nth-child(2):hover {
+    text-decoration: underline;
+}
+
+.services table tbody tr:hover {
+    background-color: rgb(216, 216, 216);
+    transition: 0.09s all ease-in-out;
+}
+
+.icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pagenation {
+    border-top: 1px solid gray;
+    padding: 5px 0;
+    background-color: #FFF;
+    border-radius: 0 0 5px 5px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.pagenationIcon1 {
+    margin: 13px 0;
+}
+
+.pagenationIcon2 {
+    transform: rotate(180deg);
+    margin: 11px 0;
+}
+
+.pagenationNumbers {
+    margin: 1px 0 0 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.pagenationNumbers div {
+    margin: 5px 10px;
+    font-size: 18px;
+}
+
+.active {
+    background-color: gray;
+    padding: 2px 7px;
+}
+
+.popup {
+    color: black;
+    font-family: poppins;
+    font-size: 20px;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: white;
+    width: 40%;
+    height: max-content;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px white;
+    border: 2px solid #0C2132;
+}
+
+.popupHead {
+    background-color: #0C2132;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.popupClose {
+    cursor: pointer;
+}
+
+.popupBody {
+    padding: 10px;
+}
+
+.popup .buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.popup .buttons button:nth-child(2) {
+    background-color: red;
+    border: 1px solid red;
+}
+
+.popup .buttons button:nth-child(2):hover {
+    box-shadow: 2px 2px 8px red;
+}
+
+.popup .buttons button:nth-child(1) {
+    background-color: #FFF;
+    color: #0C2132;
+    border: 1px solid #0C2132;
+}
+
+.popup .buttons button:nth-child(1):hover {
+    box-shadow: 2px 2px 8px green;
+    border: 1px solid green;
+}
+
+.popup .buttons button {
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.popup .deleteText {
+    margin: 7% auto;
+    padding: auto;
+    pointer-events: none;
+}
+
+.popup .icon {
+    border-bottom: 1px solid rgb(187, 185, 185);
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    justify-content: left;
+    pointer-events: none;
+}
+
+.popup .icon .delete {
+    margin: 0 5px 0 0;
+    font-size: 20px;
+    color: red;
+
+}
+
+.popup .icon .deleteIcon {
+    margin: 5px 0 0 0;
+}
+
+.actionPopUp {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+.actionItem {
+    position: absolute;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 900;
+    border-radius: 10px;
+    transition: 0.09s all ease-in-out;
+    transform: translateY(-10%) translateX(-26%);
+    box-shadow: 3px 3px 24px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.actionItem label {
+    padding-left: 16px;
+    height: 50px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+
+    user-select: none;
+    background: #FFF;
+    border: 1px solid rgb(216, 216, 216);
+    border-collapse: collapse;
+}
+
+.actionItem label:hover {
+    background-color: rgb(216, 216, 216);
+    box-shadow: 3px 3px 24px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+.viewItem {
+    position: absolute;
+    margin-left: 20%;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    border-radius: 20px;
+    transition: 0.09s all ease-in-out;
+    transform: translateY(-10%) translateX(-26%);
+    box-shadow: 3px 3px 24px 0px rgba(0, 0, 0, 0.15);
+
+    background-color: #FFF;
+}
+
+.viewHeader {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    border-collapse: collapse;
+    background-color: #0C2132;
+    color: #FFF;
+
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.viewHeader div {
+
+    padding-left: 16px;
+    height: 100%;
+    width: 85%;
+
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+
+    user-select: none;
+    background: transparent;
+}
+
+.viewHeader div label {
+    margin-right: 10px;
+}
+
+.viewHeader span {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.viewBody {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    background: #FFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    overflow-y: scroll;
+}
+
+.viewBody::-webkit-scrollbar {
+    display: none;
+}
+
+.viewBody ul {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding-left: 30px;
+}
+
+.viewBody ul li {
+    width: 95%;
+    height: 60px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    word-wrap: break-word;
+    justify-content: flex-start;
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #0C2132;
+}
+
+.viewBody ul li label {
+    padding-right: 20px;
+    color: #0C2132;
+    width: 35%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.viewBody ul li label p {
+    font-weight: 600px;
+}

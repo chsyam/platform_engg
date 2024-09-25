@@ -1,0 +1,227 @@
+.chartsBody {
+    width: 96%;
+    overflow-y: scroll;
+    padding: 0 20px;
+    margin: 0px 10px 15px 10px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    font-family: "Poppins";
+    scroll-behavior: smooth;
+}
+
+.pendingList {
+    height: 100%;
+}
+
+.pendingList table td,
+.pendingList table th {
+    border: 1px solid rgb(177, 175, 175);
+    font-size: 13px;
+    padding: 5px;
+    text-align: left;
+}
+
+.pendingList table th {
+    font-size: 14px;
+    color: #0C2132;
+    font-weight: 600;
+}
+
+.pendingList table tr td:nth-child(1),
+.pendingList table tr th:nth-child(1) {
+    text-align: center;
+}
+
+.pendingListBody {
+    padding: 2px;
+    height: 90%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.pendingListBody::-webkit-scrollbar {
+    width: 7px;
+    height: 5px;
+}
+
+.pendingListBody::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgb(77, 77, 131);
+    cursor: pointer;
+}
+
+.pendingListBody::-webkit-scrollbar-track {
+    border-radius: 30px;
+}
+
+.enlargeDashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    font-family: "Poppins";
+}
+
+.chartEnlarge {
+    width: 90%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.chartsBody::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+}
+
+.chartsBody::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgb(77, 77, 131);
+    cursor: pointer;
+}
+
+.chartsBody::-webkit-scrollbar-track {
+    border-radius: 30px;
+}
+
+
+.item {
+    background-color: #FFF;
+    box-sizing: border-box;
+    height: 300px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.liveDataChart {
+    width: 96%;
+    display: grid;
+    text-align: center;
+    height: 295px;
+}
+
+.servicesChart {
+    display: grid;
+    text-align: center;
+    height: 300px;
+}
+
+.piechart {
+    width: 100%;
+    display: grid;
+    text-align: center;
+    height: 270px;
+}
+
+.chartHead {
+    color: black;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 5px;
+    display: flex;
+    line-height: 40px;
+}
+
+.description {
+    color: gray;
+    font-size: 14px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.button {
+    padding: 5px;
+    margin: 20px 10px;
+    width: max-content;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: white;
+    font-weight: 500;
+    background: linear-gradient(90deg, #0C2132 -1.34%, #174D95 100.46%);
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+.table table td {
+    padding: 0 10px;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+    margin: 5px;
+}
+
+.selectBox {
+    border: 2px solid rgb(218, 215, 215);
+    padding: 2px;
+    color: #0C2132;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px 0 0;
+    box-sizing: border-box;
+    width: 120px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.breadCrumb {
+    color: gray;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0 5px 0 0;
+    font-size: 14px;
+}
+
+.breadCrumb:hover {
+    text-decoration: underline;
+    color: #0C2132;
+}
+
+.smallCards {
+    margin: 0 0 15px 0;
+}
+
+.smallCards_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.smallCard_item {
+    background-color: white;
+    width: max-content;
+    border-radius: 5px;
+    color: black;
+    margin: 10px;
+    font-weight: 600;
+    text-align: left;
+    height: 100px;
+    padding: 15px 5px;
+}
+
+.smallCard_item table td:nth-child(1) {
+    padding: 10px;
+}
+
+.smallCard_item table td:nth-child(2) {
+    padding: 10px;
+}

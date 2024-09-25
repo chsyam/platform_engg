@@ -1,0 +1,272 @@
+.mainContainer {
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Updated: Removed duplicate align-items property */
+}
+
+.splitScreen {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  min-height: 500px;
+}
+
+.leftPane {
+  flex-grow: 1;
+  width: 47.5%;
+  height: 100%;
+  padding-left: 4%;
+  padding-top: 3%;
+
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+  border: 1px solid #EAEAEA;
+  background: #F5F5F5;
+  
+  /* Shadow */
+  box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.20);
+}
+
+.rightPane {
+  flex-grow: 1;
+  width: 47.5%;
+  height: 100%;
+
+  overflow: auto;
+  border-radius: 10px;
+  border: 1px solid #EAEAEA;
+  background: #F5F5F5;
+  
+  /* Shadow */
+  box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.20);
+}
+
+.middlePane {
+  width: 5%;
+  overflow: auto;
+}
+
+.leftPane::-webkit-scrollbar,
+.rightPane::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+.leftPane::-webkit-scrollbar-thumb,
+.rightPane::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: rgb(77, 77, 131);
+  cursor: pointer;
+}
+
+.leftPane::-webkit-scrollbar-track,
+.rightPane::-webkit-scrollbar-track {
+  border-radius: 30px;
+}
+
+
+  .formPane {
+    margin:10%;
+    text-align:left;
+  }
+
+  .myForm{
+    margin: 0;
+    padding: 0;
+  }
+
+  .header{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .header label{
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .editButtons{
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .editButtons button{
+    border-radius: 5px;
+    background: #0C2132;
+
+    width: 80px;
+    height: 100%;
+    flex-shrink: 0;
+  }
+
+  .editButtons button label{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .editButtons span{
+    background-color: #0C2132;
+    padding: 5% 5%;
+    border-radius: 5px;
+  }
+
+  .editButtons span:hover {
+    opacity: 0.8;
+    border: 1px solid black;
+  }
+
+  .checkbox{
+    margin-left: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 4px;
+    padding-right: 8px;
+
+    width: auto;
+    height: 38px;
+    flex-shrink: 0;
+
+    border-radius: 155px;
+    border: 1px solid #EAEAEA;
+    background: #FFF;
+    
+    /* Shadow */
+    box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.20);
+  }
+
+  .checkbox span{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    border-radius: 123px;
+    background: #D9D9D9;
+  }
+
+  .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-bottom: 16px;
+  }
+
+
+  .rowValidation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+    margin-left: 10px;
+
+  }
+
+  .rowValidation div{
+    margin-left: 8px;
+    margin-top: 10px;
+  }
+
+  .rowValidation.div label{
+    margin-left: 24px;
+  }
+
+  .row input[type="checkbox"], .rowValidation input[type="checkbox"]{
+    border: 1px solid var(--primary);
+    width: 16px;
+    height: 16px;
+    color: var(--primary);
+    background-color: var(--background);
+  }
+
+  .row input {
+    margin: 0;
+    padding: 0;
+    color: var(--font-color-black);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-xsmall);
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    border: 1px solid (--primary);
+}
+
+.row input::placeholder {
+    text-align: left;
+    color: #959595;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.row input{
+  box-shadow: 0 4px 8px rgba(28, 25, 25, 0.1);
+  border-radius: 8px;
+  border-bottom: 1px solid black;
+}
+
+.row label, .rowValidation label{
+    padding-left: 10px;
+    text-align: left;
+
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.description{
+  border: 1px solid black;
+  outline: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 80px;
+  padding: 8px;
+  overflow: hidden;
+  resize: none;
+
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

@@ -1,0 +1,69 @@
+.issuesSection {
+    background-color: #FFF;
+    padding: 20px;
+    width: 90%;
+    margin: 20px 0;
+    font-family: 'Poppins';
+    overflow-y: scroll;
+}
+
+.issuesSection table {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.issuesSection .menu {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    color: #0C2132;
+}
+
+.issuesSection .statusType select,
+.issueType select {
+    padding: 2px 5px;
+    border: 2px solid black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    background-color: #0C2132;
+}
+
+.issuesSection .raiseIssue {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #0C2132;
+    color: #FFF;
+    font-weight: 500;
+}
+
+.issuesSection .issuesTable {
+    color: #0C2132;
+}
+
+.issuesSection .issuesTable tbody tr {
+    font-size: 14px;
+    height: 40px;
+}
+
+.issuesSection table td,
+.issuesSection table tr,
+.issuesSection table th {
+    border: 1px solid rgb(224, 222, 222);
+    border-collapse: collapse;
+    width: max-content;
+    padding: 5px;
+}
+
+.issuesSection table tr th{
+    font-weight: 500;
+    background-color: #0C2132;
+    color: white;
+}
+
+.issuesSection .issuesTable tbody tr:hover {
+    background-color: rgb(224, 222, 222);
+}

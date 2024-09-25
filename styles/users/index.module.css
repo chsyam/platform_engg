@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.ListContainer {
+    height: 100%;
+    width: 100%;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.container {
+    flex: 1;
+    height: 90%;
+    overflow: auto;
+}
+
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.mainContainer::-webkit-scrollbar,
+.container::-webkit-scrollbar {
+    width: 0 !important;
+    background: transparent;
+}
+
+.homeButton {
+    width: 165px;
+    height: 39px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #0C2132;
+}
+
+.cardSection {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+
+.cardSection .card {
+    width: 250px;
+    background-color: white;
+    margin: 10px 30px;
+    padding: 10px 10px 0 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.cardSection .card .icon {
+    background: #b92b27;
+    background: -webkit-linear-gradient(to right, rgb(238, 65, 65), purple);
+    background: linear-gradient(to right, rgb(238, 65, 65), purple);
+
+    border-radius: 50%;
+
+    width: 120px;
+    height: 120px;
+
+    margin: 25px auto;
+    padding: 10px;
+}
+
+.cardSection .card .icon .sec {
+    font-size: 50px;
+    border-radius: 50%;
+    background-color: white;
+
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #0C2132;
+}
+
+.cardSection .card .desc {
+    font-family: 'Poppins';
+    color: black;
+    border-top: 1px solid black;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.cardSection .card:hover {
+    background: #7F00FF;
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+    background: linear-gradient(to right, #0362fc, #4e4c4c);
+}
+
+.cardSection .card:hover .icon {
+    background-color: #FFF;
+    color: black;
+}
+
+.cardSection .card:hover .desc {
+    color: #FFF;
+    border-color: #FFF;
+}

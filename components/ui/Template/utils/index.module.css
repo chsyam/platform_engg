@@ -1,0 +1,139 @@
+.radioButton{
+    all: initial;
+
+    width: 100%;
+    height: 50px;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    border: 1px solid #EAEAEA;
+    background: #F1F1F1;
+    
+    /* Shadow */
+    box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.20);
+}
+
+.dropdown{
+    all: initial;
+    width: 100%;
+    height: 100%;
+}
+.dropdown label{
+    color: #333;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  
+    padding-left: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.Input{
+    all: initial;
+    width: 100%;
+}
+
+.Input input{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    flex-shrink: 0;
+    padding-left: 10px;
+
+    border-radius: 10px;
+    border: 1px solid #EAEAEA;
+    background: #F1F1F1;
+
+    /* Shadow */
+    box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.20);
+
+    color: #333;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.Input input::placeholder {
+    text-align: left;
+    width: 100%;
+
+    color: gray;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.textAreaDiv{
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    border-radius: 10px;
+    border: 1px solid #EAEAEA;
+    background: #F1F1F1;
+
+    /* Shadow */
+    box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.20);
+}
+
+
+.textAreaDiv label{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    color: gray;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.multiCheck{
+    width: 90%;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    border-radius: 10px;
+    border: 1px solid #EAEAEA;
+    background: #F1F1F1;
+    box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.20);
+
+}
+
+.checkItem{
+    margin-left: 10px;
+}
+
+.checkItem label{
+    margin-left: 10px;
+
+    color: gray;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

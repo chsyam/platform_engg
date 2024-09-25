@@ -1,0 +1,65 @@
+/* Table.module.css */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  color: var(--font-color-black);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xsmall);
+
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+.box::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+.box::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: rgb(77, 77, 131);
+  cursor: pointer;
+}
+
+.box::-webkit-scrollbar-track {
+  border-radius: 30px;
+}
+
+.labelBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px;
+
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.labelBox label{
+  width: auto;
+  padding: 8px;
+  padding-left: 0;
+}
+
+.addIcon{
+  margin-left: 8px;
+}
+
+.closeIcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16px;
+  width: 16px;
+  border: 2px solid transparent;
+}

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0C2132;
+  --placeholder-color: #959595;
+  --background: #DEDEDE;
+  --background-dark: #D9D9D9;
+  --background-white: #FFFFFF;
+  --light-accent: #68d696;
+  --dark-accent: #EAEAEA;
+  --secondary: #0CEDDB;
+  --background-logo: #D9ECEC;
+  --red: #ff0000;
+  --breamcrumbs-background: #f0ebeb;
+  --light-background: #525050;
+  --font-color-primary: #008080;
+  --font-color-white: white;
+  --light-font: #aabbc3;
+  --font-weight-bold: 600;
+  --font-size-bold: 35px;
+  --font-weight-medium: 400;
+  --font-size-medium: 25px;
+  --font-color-black: #363636;
+  --font-size-large: 20px;
+  --font-size-small: 16px;
+  --font-size-xsmall: 14px;
+  --font-size-xxsmall: 12px;
+}
+
+body {
+  padding: 0;
+  margin: 0px;
+  background-color: var(--background);
+  scroll-behavior: smooth;
+  color: var(--font-color-primary);
+  text-align: center;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+}
+
+.h3BoldHeading {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-bold);
+}
+
+.h3MediumHeading {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-medium);
+}
+
+.sidebar {
+  width: 241px;
+  height: 100%;
+  flex-shrink: 0;
+  border: 1px solid #EAEAEA;
+  background: #FFF;
+
+  /* Shadow */
+  box-shadow: 0px 10px 40px 0px rgba(174, 174, 174, 0.20);
+}
+
+strong {
+  font-weight: bold;
+  color: var(--light-accent);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--dark-accent);
+}
+
+button,
+input[type=submit] {
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 77%;
+  background-color: var(--primary);
+  color: var(--font-color-white);
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  transition: 0.2s;
+  font-size: 17px;
+}
+
+button:hover,
+input[type=submit]:hover {
+  border-color: var(--primary);
+  border: 1px solid #EAEAEA
+}
+
+input[type=text],
+input[type=password] {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  outline: none;
+  font-size: 15px;
+  transition: 0.2s;
+  width: 70%;
+  margin-bottom: 42px;
+  color: var(--font-color);
+  text-align: left;
+  box-shadow: 0px 10px 40px 0px #AEAEAE33;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+  border-color: var(--dark-accent);
+}
+
+form {
+  margin-top: 10%;
+}
+
+.red {
+  font-weight: bold;
+  color: var(--red);
+}
