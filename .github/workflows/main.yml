@@ -15,7 +15,7 @@ jobs:
         run: ls
       - name: Building an image
         run: sudo docker build -t 10.63.20.34:80/platform-ui-v1 . 
-      - name: Pushing the image to registry
+      - name: Pushing the image to docker registry
         run: sudo docker push 10.63.20.34:80/platform-ui-v1
       - name: Deploying on kubernetes
         run: kubectl apply -f k8s/
